@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+{% block title %}Архив - Чемпионат КХЛ 2013{% endblock %}
+{% block page_content %}
+
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">Главная</a></li>
+    <li class="breadcrumb-item"><a href="{{ url_for('main.archive') }}">Архив проведенных конкурсов</a></li>
+    <li class="breadcrumb-item">Чемпионат КХЛ 2013</li>
+</ol>
+
+<br>
+
+<h5>Итоговая таблица результатов призеров</h5>
+
+<br>
+
+<table class="table table-responsive table-striped table-bordered">
+    <thead class="thead-inverse">
+        <tr>
+            <th>Место</th>
+            <th>Номер Омнилайнера</th>
+            <th>Имя участника</th>
+            <th>Лучший результат в серии из 10 игр</th>
+            <th>Результат по всем сыгранным играм</th>
+            <th>Количество сыгранных игр</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>10...431</td>
+            <td>ВИ</td>
+            <td>26632</td>
+            <td>26632</td>
+            <td>13</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>93...154</td>
+            <td>Фельдман</td>
+            <td>25129</td>
+            <td>25129</td>
+            <td>16</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>54...184</td>
+            <td>Райскин</td>
+            <td>23088</td>
+            <td>24352</td>
+            <td>14</td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td>36...064</td>
+            <td>Алексей</td>
+            <td>19881</td>
+            <td>20022</td>
+            <td>18</td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>28...064</td>
+            <td>Штигер</td>
+            <td>14686</td>
+            <td>14686</td>
+            <td>15</td>
+        </tr>
+
+        <tr>
+            <td>6</td>
+            <td>29...064</td>
+            <td>Лу Шынлэй</td>
+            <td>13527</td>
+            <td>13527</td>
+            <td>13</td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+
+<p class="text-justify"> Победители конкурса были награждены следующими призами:</p>
+
+<ul>
+    <li> За первое место - <a href="http://www.eldorado.ru/cat/detail/71074419/">Планшет APPLE iPad 2 WI-FI+3G 16GB</a> </li>
+
+    <li>За второе место - <a href="http://www.eldorado.ru/cat/detail/71080706/">Планшет SAMSUNG Galaxy Tab 2 7.0 P3100 3G 8Gb</a></li>
+
+    <li> За третье место - <a href="http://www.eldorado.ru/cat/detail/71081048/">Планшет SAMSUNG Galaxy Tab 2 7.0 P3110 8Gb</a> </li>
+
+    <li> За четвёртое место - <a href="http://www.eldorado.ru/cat/detail/71082019/">Планшет PRESTIGIO MultiPad PMP3370B</a> </li>
+
+    <li> За пятое место - <a href="http://electronics.wikimart.ru/communication/cell/model/126108/mobilnyj_telefon_samsung_gt-s5230_star/">Телефон Samsung GT-S5230 Star</a> </li>
+
+    <li> За шестое место - <a href="http://electronics.wikimart.ru/communication/cell/model/2244518/mobilnyj_telefon_samsung_gt-c3300/">Телефон Samsung Champ C3300</a> </li>
+</ul>
+
+{% endblock %}

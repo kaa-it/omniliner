@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block title %}Архив - Кубок Конфедераций 2017{% endblock %}
+{% block page_content %}
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item"><a href="/">Главная</a></li>
+  <li class="breadcrumb-item"><a href="{{ url_for('main.archive') }}">Архив проведенных конкурсов</a></li>
+  <li class="breadcrumb-item">Кубок Конфедераций 2017</li>
+</ol>
+
+<br>
+
+<h5>Итоговая таблица результатов призеров</h5>
+
+<br>
+
+<table class="table table-responsive table-striped table-bordered">
+  <thead class="thead-inverse">
+    <tr>
+      <th>Место</th>
+      <th>Номер Омнилайнера</th>
+      <th>Имя участника</th>
+      <th>Лучший результат в серии из 10 игр</th>
+      <th>Результат по всем сыгранным играм</th>
+      <th>Количество сыгранных игр</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>10...431</td>
+      <td>Barkasik</td>
+      <td>58419</td>
+      <td>60516</td>
+      <td>16</td>
+    </tr>
+
+    <tr>
+      <td>2</td>
+      <td>10...380</td>
+      <td>Р.Майнинг</td>
+      <td>52968</td>
+      <td>53478</td>
+      <td>16</td>
+    </tr>
+
+    <tr>
+      <td>3</td>
+      <td>10...630</td>
+      <td>Гридин Алексей</td>
+      <td>46180</td>
+      <td>46180</td>
+      <td>16</td>
+    </tr>
+  </tbody>
+</table>
+
+<br />
+
+<p>Победители конкурса были награждены следующими призами:</p>
+
+<ul>
+  <li>За первое место - 8-ми дюймовый планшет под Windows 10, предназначенный для работы с Омнилайнером OMN100A</li>
+
+  <li>За второе место - 7-ми дюймовый планшет</li>
+
+  <li>За третье место - книга с автографом известного спортивного эксперта Евгения Ловчева</li>
+</ul>
+
+{% endblock %}

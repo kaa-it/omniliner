@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% block title %}Архив - Чемпионат Европы по футболу 2012{% endblock %}
+{% block page_content %}
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item"><a href="/">Главная</a></li>
+  <li class="breadcrumb-item"><a href="{{ url_for('main.archive') }}">Архив проведенных конкурсов</a></li>
+  <li class="breadcrumb-item">Чемпионат Европы по футболу 2012</li>
+</ol>
+
+<br>
+
+<h5>Итоговая таблица результатов призеров</h5>
+
+<br>
+
+<table class="table table-responsive table-striped table-bordered">
+    <thead class="thead-inverse">
+        <tr>
+            <th>Место</th>
+            <th>Номер Омнилайнера</th>
+            <th>Имя участника</th>
+            <th>Результат</th>
+            <th>Количество учтенных матчей</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>10...491</td>
+            <td>AC</td>
+            <td>93014</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>81...044</td>
+            <td>Иванов</td>
+            <td>88744</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>10...630</td>
+            <td>Ivan</td>
+            <td>87595</td>
+            <td>30</td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+
+<p class="text-justify">На фото представлены победители конкурса после официального награждения следующими призами:</p>
+
+<ul>
+    <li class="text-justify">За первое место - Золотая медаль победителя конкурса и планшетный компьютер Apple iPad 3 Wi - Fi 32 GB</li>
+    <li class="text-justify">За второе место - Серебряная медаль за второе место и музыкальный центр Apple iPod touch 4 32 GB</li>
+    <li class="text-justify">За третье место - Бронзовая медаль за 3-е место и музыкальный плеер Apple iPod nano 6 8 GB</li>
+</ul>
+
+<br>
+
+<img class="img-fluid" src="{{ url_for('static', filename = 'img/archive/football_euro2012.jpg') }}" />
+
+{% endblock %}

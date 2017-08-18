@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Архив проведенных конкурсов{% endblock %}
+{% block page_content %}
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item"><a href="/">Главная</a></li>
+  <li class="breadcrumb-item active">Архив проведенных конкурсов</li>
+</ol>
+
+<br>
+
+<ol>
+  <li><a href="{{ url_for('main.archive_football_europe_champ_2012') }}">Конкурс по прогнозированию результатов матчей Чемпионата Европы по футболу 2012 в реальном времени</a></li>
+  <li><a href="{{ url_for('main.archive_hockey_khl_champ_2013') }}">Конкурс по прогнозированию результатов матчей второго этапа плей-офф Чемпионата КХЛ 2013 в реальном времени</a></li>
+  <li><a href="{{ url_for('main.archive_chess_anand_karlsen') }}">Конкурс по прогнозированию результатов партий в матче за звание чемпиона мира между Вишванатаном Анандом и Магнусом Карлсеном в реальном времени</a></li>
+  <li><a href="{{ url_for('main.archive_football_conf_cup_2017') }}">Конкурс по прогнозированию результатов матчей Кубка Конфедераций 2017 в реальном времени</a></li>
+</ol>
+
+{% endblock %}

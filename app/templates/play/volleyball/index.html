@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Воллейбол{% endblock %}
+{% block page_content %}
+
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">Главная</a></li>
+    <li class="breadcrumb-item"><a href="{{ url_for('main.play') }}">Играть</a></li>
+    <li class="breadcrumb-item active">Волейбол</li>
+</ol>
+
+<br>
+
+<ol>
+    <li><a href="{{ url_for('main.play_volleyball_europe_champ_2017') }}">Чемпионат Европы по волейболу 2017</a></li>
+</ol>
+
+{% endblock %}

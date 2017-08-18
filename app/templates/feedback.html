@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %}Обратная связь{% endblock %}
+{% block page_content %}
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Главная</a></li>
+        <li class="breadcrumb-item active">Обратная связь</li>
+    </ol>
+
+    <br>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 align-self-center">
+                <form method="POST">
+                    {{ form.csrf_token }}
+                    <div class="form-group">
+                        {{ form.name.label }}
+                        {{ form.name(class='form-control', placeholder='Введите имя') }}
+                    </div>
+                    <div class="form-group">
+                        {{ form.email.label }}
+                        {{ form.email(class='form-control', placeholder='Введите email') }}
+                        <small id="emailHelp" class="form-text text-muted">Мы не предоставляем никому Ваш электронный адрес.</small>
+                        {% if form.email.errors %}
+                            <ul class="errors">
+                                {% for error in form.email.errors %}
+                                    <li class="text-danger">{{ error }}</li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    </div>
+                    <div class="form-group">
+                        {{ form.message.label }}
+                        {{ form.message(class='form-control', rows='3') }}
+                    </div>
+                    {{ form.submit(class='btn btn-primary') }}
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

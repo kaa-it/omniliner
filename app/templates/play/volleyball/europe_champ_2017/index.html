@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Чемпионат Европы по волейболу 2017{% endblock %}
+{% block page_content %}
+
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">Главная</a></li>
+    <li class="breadcrumb-item"><a href="{{ url_for('main.play') }}">Играть</a></li>
+    <li class="breadcrumb-item"><a href="{{ url_for('main.play_volleyball') }}">Волейбол</a></li>
+    <li class="breadcrumb-item active">Чемпионат Европы по волейболу 2017</li>
+</ol>
+
+<br>
+
+<ol>
+    <li><a href="{{ url_for('main.play_volleyball_europe_champ_2017_rules') }}">Правила проведения конкурса</a></li>
+    <li><a href="{{ url_for('main.play_volleyball_europe_champ_2017_games') }}">Коды матчей</a></li>
+    <li><a href="http://46.165.248.101/results.php">Таблица результатов</a></li>
+</ol>
+
+{% endblock %}

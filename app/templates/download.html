@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% block title %}Скачать{% endblock %}
+{% block page_content %}
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item"><a href="/">Главная</a></li>
+  <li class="breadcrumb-item active">Скачать</li>
+</ol>
+
+<br>
+
+<table class="table table-responsive table-striped table-bordered">
+    <thead class="thead-inverse">
+        <tr>
+            <th>Имя файла</th>
+            <th>Версия</th>
+            <th>Описание</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td> <a href="{{ url_for('static', filename = 'downloads/Omniliner Setup.exe') }}">Omniliner Setup.exe</a> </td>
+            <td>1.9.0</td>
+            <td> Инсталлятор. Для успешной установки программного обеспечения необходимо запускать с правами администратора. </td>
+        </tr>
+
+        <tr>
+            <td> <a href="{{ url_for('static', filename = 'downloads/Omniliner.zip') }}">Omniliner.zip</a> </td>
+            <td>1.9.0</td>
+            <td> Портативная версия. Для использования достаточно распаковать архив и запустить программу. Перед распаковыванием рекомендуется <a href="http://www.oszone.net/27842/Windows_10_unblock_file#var2" target="_blank">разблокировать архив</a>: зайдите в свойства скачанного файла, нажмите Разблокировать внизу окна, затем нажмите кнопку ОК. </td>
+        </tr>
+
+        <tr>
+            <td> <a href="{{ url_for('static', filename = 'downloads/Руководство.pdf') }}">Руководство.pdf</a> </td>
+            <td>1.9.0</td>
+            <td> Руководство по использованию Омнилайнера и программного обеспечения. Для открытия файла используйте программу <a href="http://get.adobe.com/uk/reader/">Adobe Reader</a>. </td>
+        </tr>
+
+        <tr>
+            <td> <a href="{{ url_for('static', filename = 'downloads/Руководство.rtf') }}">Руководство.rtf</a> </td>
+            <td>1.9.0</td>
+            <td> Руководство по использованию Омнилайнера и программного обеспечения. Для открытия файла можно воспользоваться встроенной в Windows программой WordPad. </td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+
+<h5>Системные требования:</h5>
+
+<br>
+
+<ul>
+    <li>Операционная система Windows XP SP3, Vista, 7, 8, 8.1, 10.</li>
+
+    <li>Процессор с тактовой частотой 800 МГц.</li>
+
+    <li>256 Мб оперативной памяти.</li>
+
+    <li>20 Мб свободного пространства на жестком диске.</li>
+
+    <li>Монитор с поддержкой разрешения 800 x 600.</li>
+
+    <li>Клавиатура и мышь.</li>
+
+    <li>Разъем USB 1.1 для подключения Омнилайнера.</li>
+
+    <li>Подключение к сети Интернет.</li>
+</ul>
+
+{% endblock %}

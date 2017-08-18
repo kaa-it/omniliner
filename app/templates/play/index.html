@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Играть{% endblock %}
+{% block page_content %}
+
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="{{ url_for('main.index') }}">Главная</a></li>
+    <li class="breadcrumb-item active">Играть</li>
+</ol>
+
+<br>
+
+<ol>
+    <li><a href="{{ url_for('main.play_volleyball') }}">Воллейбол</a></li>
+    <li><a href="{{ url_for('main.play_chess') }}">Шахматы</a></li>
+    <li><a href="{{ url_for('main.play_gymnastics') }}">Спортивная гимнастика</a></li>
+</ol>
+
+{% endblock %}

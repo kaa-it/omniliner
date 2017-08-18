@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  font-family: Roboto;
+}
+
+.footer .row {
+  padding: 10px 0;
+  background-color:aliceblue; /* rgb(204, 117, 218);*/
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel-inner {
+  position: relative;
+
+  overflow: hidden;
+
+  width: 100%;
+}
+
+.carousel-item {
+  /*height: 300px;*/
+
+  background-color: /*rgb(174, 119, 193, .3);*/ #18BC9C;
+}
+
+.d-block.img-fluid {
+  height: auto;
+}
+
+#mainArea {
+  padding: 50px 0;
+}
+
+.rules li {
+    margin: 5px 0;
+}
