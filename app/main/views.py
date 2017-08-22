@@ -8,6 +8,58 @@ from ..email import send_email
 def index():
     return render_template('index.html')
 
+@main.route('/play.html')
+def play():
+    return render_template('play/index.html')
+
+@main.route('/play/chess/index.html')
+def play_chess():
+    return render_template('play/chess/index.html')
+
+@main.route('/play/chess/world_cup_2017/index.html')
+def play_chess_world_cup_2017():
+    return render_template('/play/chess/world_cup_2017/index.html')
+
+@main.route('/play/chess/world_cup_2017/rules.html')
+def play_chess_world_cup_2017_rules():
+    return render_template('/play/chess/world_cup_2017/rules.html')
+
+@main.route('/play/chess/world_cup_2017/games.html')
+def play_chess_world_cup_2017_games():
+    return render_template('/play/chess/world_cup_2017/games.html')
+
+@main.route('/play/gymnastics/index.html')
+def play_gymnastics():
+    return render_template('play/gymnastics/index.html')
+
+@main.route('/play/gymnastics/world_champ_2017/index.html')
+def play_gymnastics_world_champ_2017():
+    return render_template('play/gymnastics/world_champ_2017/index.html')
+
+@main.route('/play/gymnastics/world_champ_2017/rules.html')
+def play_gymnastics_world_champ_2017_rules():
+    return render_template('play/gymnastics/world_champ_2017/rules.html')
+
+@main.route('/play/gymnastics/world_champ_2017/games.html')
+def play_gymnastics_world_champ_2017_games():
+    return render_template('play/gymnastics/world_champ_2017/games.html')
+
+@main.route('/play/volleyball/index.html')
+def play_volleyball():
+    return render_template('play/volleyball/index.html')
+
+@main.route('/play/volleyball/europe_champ_2017/index.html')
+def play_volleyball_europe_champ_2017():
+    return render_template('play/volleyball/europe_champ_2017/index.html')
+
+@main.route('/play/volleyball/europe_champ_2017/rules.html')
+def play_volleyball_europe_champ_2017_rules():
+    return render_template('play/volleyball/europe_champ_2017/rules.html')
+
+@main.route('/play/volleyball/europe_champ_2017/games.html')
+def play_volleyball_europe_champ_2017_games():
+    return render_template('play/volleyball/europe_champ_2017/games.html')
+
 @main.route('/about_us.html')
 def about_us():
     return render_template('about_us.html')

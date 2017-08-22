@@ -4,9 +4,9 @@
 
 <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="/">Главная</a></li>
-    <li class="breadcrumb-item"><a href="/play">Играть</a></li>
-    <li class="breadcrumb-item"><a href="/play/gymnastics/">Спортивная гимнастика</a></li>
-    <li class="breadcrumb-item"><a href="/play/gymnastics/world_champ_2017/">Чемпионат Мира по спортивной гимнастике 2017</a></li>
+    <li class="breadcrumb-item"><a href="{{ url_for('main.play') }}">Играть</a></li>
+    <li class="breadcrumb-item"><a href="{{ url_for('main.play_gymnastics') }}">Спортивная гимнастика</a></li>
+    <li class="breadcrumb-item"><a href="{{ url_for('main.play_gymnastics_world_champ_2017') }}">Чемпионат Мира по спортивной гимнастике 2017</a></li>
     <li class="breadcrumb-item active">Правила проведения конкурса</li>
 </ol>
 
@@ -14,4 +14,4 @@
 
 <p class="text-info">В разработке...</p>
 
-{% endblock %
+{% endblock %}

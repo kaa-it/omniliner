@@ -4,16 +4,16 @@
 
 <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="/">Главная</a></li>
-    <li class="breadcrumb-item"><a href="/play">Играть</a></li>
-    <li class="breadcrumb-item"><a href="/play/chess/">Шахматы</a></li>
+    <li class="breadcrumb-item"><a href="{{ url_for('main.play') }}">Играть</a></li>
+    <li class="breadcrumb-item"><a href="{{ url_for('main.play_chess') }}">Шахматы</a></li>
     <li class="breadcrumb-item active">Кубок Мира по шахматам 2017</li>
 </ol>
 
 <br>
 
 <ol>
-    <li><a href="/play/chess/world_cup_2017/rules.html">Правила проведения конкурса</a></li>
-    <li><a href="/play/chess/world_cup_2017/games.html">Коды партий</a></li>
+    <li><a href="{{ url_for('main.play_chess_world_cup_2017_rules') }}">Правила проведения конкурса</a></li>
+    <li><a href="{{ url_for('main.play_chess_world_cup_2017_games') }}">Коды партий</a></li>
 </ol>
 
 {% endblock %}

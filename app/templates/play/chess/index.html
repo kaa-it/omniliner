@@ -2,6 +2,16 @@
 {% block title %}Шахматы{% endblock %}
 {% block page_content %}
 
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">Главная</a></li>
+    <li class="breadcrumb-item"><a href="{{ url_for('main.play') }}">Играть</a></li>
+    <li class="breadcrumb-item active">Шахматы</li>
+</ol>
 
+<br>
+
+<ol>
+    <li><a href="{{ url_for('main.play_chess_world_cup_2017') }}">Кубок Мира по шахматам 2017</a></li>
+</ol>
 
 {% endblock %}

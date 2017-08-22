@@ -33,16 +33,16 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="/">Главная <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="{{ url_for('main.index') }}">Главная <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" id="navbarPlayMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Играть
         </a>
           <div class="dropdown-menu" aria-labelledby="navbarPlayMenuLink">
-            <a class="dropdown-item" href="/play/volleyball/">Волейбол</a>
-            <a class="dropdown-item" href="/play/chess/">Шахматы</a>
-            <a class="dropdown-item" href="/play/gymnastics/">Спортивная гимнастика</a>
+            <a class="dropdown-item" href="{{ url_for('main.play_volleyball') }}">Волейбол</a>
+            <a class="dropdown-item" href="{{ url_for('main.play_chess') }}">Шахматы</a>
+            <a class="dropdown-item" href="{{ url_for('main.play_gymnastics') }}">Спортивная гимнастика</a>
           </div>
         </li>
         <li class="nav-item">
@@ -154,13 +154,13 @@
             </div>
             <ul class="list-group list-group-flash">
               <li class="list-group-item">
-                <a class="card-link" href="/play/volleyball/europe_champ_2017/">Чемпионат Европы по волейболу 2017</a>
+                <a class="card-link" href="{{ url_for('main.play_volleyball_europe_champ_2017') }}">Чемпионат Европы по волейболу 2017</a>
               </li>
               <li class="list-group-item">
-                <a class="card-link" href="/play/chess/world_cup_2017/">Кубок Мира по шахматам 2017</a>
+                <a class="card-link" href="{{ url_for('main.play_chess_world_cup_2017') }}">Кубок Мира по шахматам 2017</a>
               </li>
               <li class="list-group-item">
-                <a class="card-link" href="/play/gymnastics/world_champ_2017/">Чемпионат Мира по спортивной гимнастике 2017</a>
+                <a class="card-link" href="{{ url_for('main.play_gymnastics_world_champ_2017') }}">Чемпионат Мира по спортивной гимнастике 2017</a>
               </li>
             </ul>
           </div>
