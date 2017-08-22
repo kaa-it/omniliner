@@ -5,7 +5,7 @@ class Config:
     MAIL_USE_TLS = True
     MAIL_USERNAME = 'kaa-it@yandex.ru'  # os.environ.get('MAIL_USERNAME')
     MAIL_PASSWORD = 'k28L07v60@'        # os.environ.get('MAIL_PASSWORD')
-    OMNILINER_ADMIN = 'kaa-it@yandex.ru'
+    OMNILINER_ADMIN = 'kirilin@incotex.ru'
 
     @staticmethod
     def init_app(app):
