@@ -1,0 +1,234 @@
+{% extends "base.html" %}
+{% block title %}Результаты конкурса{% endblock %}
+{% block page_content %}
+
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">Главная</a></li>
+    <li class="breadcrumb-item"><a href="{{ url_for('main.play') }}">Играть</a></li>
+    <li class="breadcrumb-item"><a href="{{ url_for('main.play_volleyball') }}">Волейбол</a></li>
+    <li class="breadcrumb-item"><a href="{{ url_for('main.play_volleyball_europe_champ_2017') }}">Чемпионат Европы по волейболу 2017</a></li>
+    <li class="breadcrumb-item active">Результаты конкурса</li>
+</ol>
+
+<br>
+
+<h5 class="text-center">Итоговая таблица результатов призёров конкурса</h5>
+
+<br>
+
+<table class="table table-responsive table-striped table-bordered">
+    <thead class="thead-inverse">
+        <tr>
+            <th>Место</th>
+            <th>Номер Омнилайнера</th>
+            <th>Имя участника</th>
+            <th>Лучший результат в серии из 10 игр</th>
+            <th>Результат по всем сыгранным играм</th>
+            <th>Количество сыгранных игр</th
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>10...431</td>
+            <td>Barkasik</td>
+            <td>100000</td>
+            <td>123677</td>
+            <td>17</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>10...630</td>
+            <td>Vittek</td>
+            <td>88697</td>
+            <td>96906</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>10...141</td>
+            <td>Евгений Сергеевич</td>
+            <td>86128</td>
+            <td>91236</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>10...431</td>
+            <td>Дубова Ольга</td>
+            <td>83942</td>
+            <td>84876</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>10...630</td>
+            <td>Кривенко</td>
+            <td>83289</td>
+            <td>83289</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>10...781</td>
+            <td>Король</td>
+            <td>82868</td>
+            <td>91561</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>10...080</td>
+            <td>Мамчев</td>
+            <td>76330</td>
+            <td>76550</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>10...431</td>
+            <td>Участник</td>
+            <td>75867</td>
+            <td>75867</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>10...441</td>
+            <td>Соловей Елена</td>
+            <td>75413</td>
+            <td>75925</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>10...441</td>
+            <td>Чернов В.</td>
+            <td>73428</td>
+            <td>76091</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>10...630</td>
+            <td>Алла</td>
+            <td>72597</td>
+            <td>72597</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>10...080</td>
+            <td>predictor</td>
+            <td>72577</td>
+            <td>73360</td>
+            <td>17</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>10...030</td>
+            <td>Карасев Р.</td>
+            <td>72356</td>
+            <td>73355</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>10...630</td>
+            <td>Дубов</td>
+            <td>70860</td>
+            <td>74317</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>10...380</td>
+            <td>Р.Майнинг</td>
+            <td>69903</td>
+            <td>69903</td>
+            <td>17</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>10...441</td>
+            <td>Анатолий Стрельников</td>
+            <td>69745</td>
+            <td>69745</td>
+            <td>17</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>10...380</td>
+            <td>Владимир Курчин</td>
+            <td>69333</td>
+            <td>69333</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>10...431</td>
+            <td>ВП</td>
+            <td>67102</td>
+            <td>67102</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>10...030</td>
+            <td>Сергей Н.</td>
+            <td>64052</td>
+            <td>64062</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>10...030</td>
+            <td>Богданов</td>
+            <td>63811</td>
+            <td>63811</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>10...030</td>
+            <td>А. Петров</td>
+            <td>63322</td>
+            <td>63322</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>10...781</td>
+            <td>Быков</td>
+            <td>63229</td>
+            <td>63229</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td>10...441</td>
+            <td>Воробьев А.</td>
+            <td>62741</td>
+            <td>62741</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>10...781</td>
+            <td>Виктор</td>
+            <td>62538</td>
+            <td>62538</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>25</td>
+            <td>10...630</td>
+            <td>Зубков</td>
+            <td>62212</td>
+            <td>62212</td>
+            <td>18</td>
+        </tr>
+    </tbody>
+</table>
+
+{% endblock %}

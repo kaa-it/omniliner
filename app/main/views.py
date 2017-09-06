@@ -60,6 +60,10 @@ def play_volleyball_europe_champ_2017_rules():
 def play_volleyball_europe_champ_2017_games():
     return render_template('play/volleyball/europe_champ_2017/games.html')
 
+@main.route('/play/volleyball/europe_champ_2017/results.html')
+def play_volleyball_europe_champ_2017_results():
+    return render_template('play/volleyball/europe_champ_2017/results.html')
+
 @main.route('/about_us.html')
 def about_us():
     return render_template('about_us.html')
