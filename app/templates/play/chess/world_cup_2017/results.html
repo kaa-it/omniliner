@@ -1,0 +1,234 @@
+{% extends "base.html" %}
+{% block title %}Результаты конкурса{% endblock %}
+{% block page_content %}
+
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">Главная</a></li>
+    <li class="breadcrumb-item"><a href="{{ url_for('main.play') }}">Играть</a></li>
+    <li class="breadcrumb-item"><a href="{{ url_for('main.play_chess') }}">Шахматы</a></li>
+    <li class="breadcrumb-item"><a href="{{ url_for('main.play_chess_world_cup_2017') }}">Кубок Мира по шахматам 2017</a></li>
+    <li class="breadcrumb-item active">Результаты конкурса</li>
+</ol>
+
+<br>
+
+<h5 class="text-center">Итоговая таблица результатов призёров конкурса</h5>
+
+<br>
+
+<table class="table table-responsive table-striped table-bordered">
+    <thead class="thead-inverse">
+        <tr>
+            <th>Место</th>
+            <th>Номер Омнилайнера</th>
+            <th>Имя участника</th>
+            <th>Лучший результат в серии из 10 игр</th>
+            <th>Результат по всем сыгранным играм</th>
+            <th>Количество сыгранных игр</th
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>10...380</td>
+            <td>Татьяна Р.</td>
+            <td>100000</td>
+            <td>148413</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>10...731</td>
+            <td>Luh</td>
+            <td>100000</td>
+            <td>145708</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>10...781</td>
+            <td>Быков</td>
+            <td>100000</td>
+            <td>116813</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>10...090</td>
+            <td>Моравец</td>
+            <td>100000</td>
+            <td>114194</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>10...441</td>
+            <td>Соловей Елена</td>
+            <td>100000</td>
+            <td>114174</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>10...030</td>
+            <td>А. Петров</td>
+            <td>100000</td>
+            <td>114125</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>10...191</td>
+            <td>Viktor A.</td>
+            <td>100000</td>
+            <td>114091</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>10...431</td>
+            <td>Barkasik</td>
+            <td>100000</td>
+            <td>112988</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>10...781</td>
+            <td>Матвей</td>
+            <td>100000</td>
+            <td>112614</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>10...630</td>
+            <td>Шевченко</td>
+            <td>100000</td>
+            <td>112041</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>10...431</td>
+            <td>Дубова Ольга</td>
+            <td>100000</td>
+            <td>111167</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>10...191</td>
+            <td>COSTA</td>
+            <td>100000</td>
+            <td>110408</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>10...080</td>
+            <td>Мамчев</td>
+            <td>100000</td>
+            <td>110310</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>10...780</td>
+            <td>Пулеха А.А.</td>
+            <td>100000</td>
+            <td>110274</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>10...191</td>
+            <td>Воробьев</td>
+            <td>100000</td>
+            <td>110242</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>10...431</td>
+            <td>ВП</td>
+            <td>100000</td>
+            <td>110125</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>10...441</td>
+            <td>Анатолий Стрельников</td>
+            <td>100000</td>
+            <td>110000</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>10...630</td>
+            <td>Ткачев Василий</td>
+            <td>100000</td>
+            <td>110000</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>10...630</td>
+            <td>Гридин Алексей</td>
+            <td>100000</td>
+            <td>110000</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>10...380</td>
+            <td>ВАИ</td>
+            <td>100000</td>
+            <td>110000</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>10...630</td>
+            <td>Шульман М.</td>
+            <td>100000</td>
+            <td>110000</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>10...630</td>
+            <td>Татьяна Норова</td>
+            <td>100000</td>
+            <td>109937</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td>10...030</td>
+            <td>Владимир</td>
+            <td>100000</td>
+            <td>108850</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>10...630</td>
+            <td>Дубов</td>
+            <td>100000</td>
+            <td>107274</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>25</td>
+            <td>10...030</td>
+            <td>ABC</td>
+            <td>100000</td>
+            <td>105279</td>
+            <td>16</td>
+        </tr>
+    </tbody>
+</table>
+
+{% endblock %}

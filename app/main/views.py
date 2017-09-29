@@ -28,21 +28,25 @@ def play_chess_world_cup_2017_rules():
 def play_chess_world_cup_2017_games():
     return render_template('/play/chess/world_cup_2017/games.html')
 
-@main.route('/play/gymnastics/index.html')
-def play_gymnastics():
-    return render_template('play/gymnastics/index.html')
+@main.route('/play/chess/world_cup_2017/results.html')
+def play_chess_world_cup_2017_results():
+    return render_template('play/chess/world_cup_2017/results.html')
 
-@main.route('/play/gymnastics/world_champ_2017/index.html')
-def play_gymnastics_world_champ_2017():
-    return render_template('play/gymnastics/world_champ_2017/index.html')
+@main.route('/play/skating/index.html')
+def play_skating():
+    return render_template('play/skating/index.html')
 
-@main.route('/play/gymnastics/world_champ_2017/rules.html')
-def play_gymnastics_world_champ_2017_rules():
-    return render_template('play/gymnastics/world_champ_2017/rules.html')
+@main.route('/play/skating/rostelecom_cup_2017/index.html')
+def play_skating_rostelecom_cup_2017():
+    return render_template('play/skating/rostelecom_cup_2017/index.html')
 
-@main.route('/play/gymnastics/world_champ_2017/games.html')
-def play_gymnastics_world_champ_2017_games():
-    return render_template('play/gymnastics/world_champ_2017/games.html')
+@main.route('/play/skating/rostelecom_cup_2017/rules.html')
+def play_skating_rostelecom_cup_2017_rules():
+    return render_template('play/skating/rostelecom_cup_2017/rules.html')
+
+@main.route('/play/skating/rostelecom_cup_2017/games.html')
+def play_skating_rostelecom_cup_2017_games():
+    return render_template('play/skating/rostelecom_cup_2017/games.html')
 
 @main.route('/play/volleyball/index.html')
 def play_volleyball():
