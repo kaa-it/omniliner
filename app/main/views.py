@@ -36,17 +36,17 @@ def play_chess_world_cup_2017_results():
 def play_skating():
     return render_template('play/skating/index.html')
 
-@main.route('/play/skating/rostelecom_cup_2017/index.html')
-def play_skating_rostelecom_cup_2017():
-    return render_template('play/skating/rostelecom_cup_2017/index.html')
+@main.route('/play/skating/europe_cup_2018/index.html')
+def play_skating_europe_cup_2018():
+    return render_template('play/skating/europe_cup_2018/index.html')
 
-@main.route('/play/skating/rostelecom_cup_2017/rules.html')
-def play_skating_rostelecom_cup_2017_rules():
-    return render_template('play/skating/rostelecom_cup_2017/rules.html')
+@main.route('/play/skating/europe_cup_2018/rules.html')
+def play_skating_europe_cup_2018_rules():
+    return render_template('play/skating/europe_cup_2018/rules.html')
 
-@main.route('/play/skating/rostelecom_cup_2017/games.html')
-def play_skating_rostelecom_cup_2017_games():
-    return render_template('play/skating/rostelecom_cup_2017/games.html')
+@main.route('/play/skating/europe_cup_2018/games.html')
+def play_skating_europe_cup_2018_games():
+    return render_template('play/skating/europe_cup_2018/games.html')
 
 @main.route('/play/volleyball/index.html')
 def play_volleyball():
