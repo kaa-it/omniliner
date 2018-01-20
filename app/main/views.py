@@ -32,6 +32,14 @@ def play_chess_world_cup_2017_games():
 def play_chess_world_cup_2017_results():
     return render_template('play/chess/world_cup_2017/results.html')
 
+@main.route('/play/misc/index.html')
+def play_misc():
+    return render_template('/play/misc/index.html')
+
+@main.route('/play/misc/olympics_2018/index.html')
+def play_misc_olympics_2018():
+    return render_template('/play/misc/olympics_2018/index.html')
+
 @main.route('/play/skating/index.html')
 def play_skating():
     return render_template('play/skating/index.html')

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Олимпийские игры 2018{% endblock %}
+{% block page_content %}
+
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">Главная</a></li>
+    <li class="breadcrumb-item"><a href="{{ url_for('main.play') }}">Играть</a></li>
+    <li class="breadcrumb-item"><a href="{{ url_for('main.play_misc') }}">Разное</a></li>
+    <li class="breadcrumb-item active">Олимпийские игры 2018</li>
+</ol>
+
+<br>
+
+<p class="text-info">В разработке...</p>
+
+{% endblock %}
