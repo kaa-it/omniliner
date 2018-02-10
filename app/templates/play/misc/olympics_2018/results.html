@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block title %}Результаты конкурса{% endblock %}
+{% block page_content %}
+
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">Главная</a></li>
+    <li class="breadcrumb-item"><a href="{{ url_for('main.play') }}">Играть</a></li>
+    <li class="breadcrumb-item"><a href="{{ url_for('main.play_misc') }}">Разное</a></li>
+    <li class="breadcrumb-item"><a href="{{ url_for('main.play_misc_olympics_2018') }}">Олимпийские игры 2018</a></li>
+    <li class="breadcrumb-item active">Результаты конкурса</li>
+</ol>
+
+<br>
+
+<h5 class="text-center">Сводная таблица результатов</h5>
+
+<br>
+
+<table class="table table-responsive table-striped table-bordered">
+    <thead class="thead-inverse">
+        <tr>
+            <th>Место</th>
+            <th>Номер Омнилайнера</th>
+            <th>Имя участника</th>
+            <th>Лучший результат в серии из 10 игр</th>
+            <th>Результат по всем сыгранным играм</th>
+            <th>Количество сыгранных игр</th
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>      
+    </tbody>
+</table>
+
+{% endblock %}

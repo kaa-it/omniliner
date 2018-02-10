@@ -40,6 +40,18 @@ def play_misc():
 def play_misc_olympics_2018():
     return render_template('/play/misc/olympics_2018/index.html')
 
+@main.route('/play/misc/olympics_2018/rules.html')
+def play_misc_olympics_2018_rules():
+    return render_template('/play/misc/olympics_2018/rules.html')
+
+@main.route('/play/misc/olympics_2018/games.html')
+def play_misc_olympics_2018_games():
+    return render_template('/play/misc/olympics_2018/games.html')
+
+@main.route('/play/misc/olympics_2018/results.html')
+def play_misc_olympics_2018_results():
+    return render_template('/play/misc/olympics_2018/results.html')
+
 @main.route('/play/skating/index.html')
 def play_skating():
     return render_template('play/skating/index.html')

@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+{% block title %}Коды партий{% endblock %}
+{% block page_content %}
+
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">Главная</a></li>
+    <li class="breadcrumb-item"><a href="{{ url_for('main.play') }}">Играть</a></li>
+    <li class="breadcrumb-item"><a href="{{ url_for('main.play_misc') }}">Разное</a></li>
+    <li class="breadcrumb-item"><a href="{{ url_for('main.play_misc_olympics_2018') }}">Олимпийские игры 2018</a></li>
+    <li class="breadcrumb-item active">Коды матчей</li>
+</ol>
+
+<br>
+
+<p aling="justify"><span class="text-warning">Внимание!</span> Информация по датам начала матчей и их кодам может меняться по мере поступления новых данных.</p>
+
+<br>
+
+<h5>Групповой турнир</h5>
+
+<br>
+
+<table class="table table-responsive table-striped table-bordered">
+        <thead class="thead-inverse">
+            <tr>
+                <th>Номер</th>
+                <th>Дата</th>
+                <th>Участник 1</th>
+                <th>Участник 2</th>
+                <th>Код</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>14.02.18</td>
+                <td>Словакия</td>
+                <td>Россия</td>
+                <td>AA-001</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>14.02.18</td>
+                <td>США</td>
+                <td>Словения</td>
+                <td>AA-002</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>15.02.18</td>
+                <td>Чехия</td>
+                <td>Южная Корея</td>
+                <td>AA-003</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>15.02.18</td>
+                <td>Швейцария</td>
+                <td>Канада</td>
+                <td>AA-004</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>16.02.18</td>
+                <td>Россия</td>
+                <td>Словения</td>
+                <td>AA-005</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>16.02.18</td>
+                <td>Швеция</td>
+                <td>Германия</td>
+                <td>AA-006</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>17.02.18</td>
+                <td>Россия</td>
+                <td>США</td>
+                <td>AA-007</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>17.02.18</td>
+                <td>Словения</td>
+                <td>Словакия</td>
+                <td>AA-008</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>18.02.18</td>
+                <td>Канада</td>
+                <td>Южная Корея</td>
+                <td>AA-009</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>18.02.18</td>
+                <td>Швеция</td>
+                <td>Финляндия</td>
+                <td>AA-010</td>
+            </tr>
+        </tbody>
+    </table>
+
+{% endblock %}
