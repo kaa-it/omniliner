@@ -6,7 +6,8 @@ from ..email import send_email
 
 @main.route('/')
 def index():
-    return render_template('index.html')
+    #return render_template('index.html')
+    return redirect("http://test.omniliner.ru")
 
 @main.route('/play.html')
 def play():
